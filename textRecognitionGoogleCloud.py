@@ -1,16 +1,25 @@
-from __future__ import print_function
-from google.cloud import vision
+import io
+import os
 
-image_uri = 'gs://cloud-vision-codelab/otter_crossing.jpg'
+# Imports the Google Cloud client library
+from google.cloud  import vision
 
+# Instantiates a client
 client = vision.ImageAnnotatorClient()
-image = vision.Image()
-image.source.image_uri = image_uri
 
-response = client.text_detection(image=image)
+# The name of the image file to annotate
+file_name = os.path.abspath('/Users/mati/Downloads/Unknown-2.jpeg')
 
-for text in response.text_annotations:
-    print('=' * 30)
-    print(text.description)
-    vertices = ['(%s,%s)' % (v.x, v.y) for v in text.bounding_poly.vertices]
-    print('bounds:', ",".join(vertices))
+# Loads the image into memory
+with io.open(file_name, 'rb') as image_file:
+    content = image_file.read()
+
+image = vision.Image(content=content)
+
+# Performs label detection on the image file
+response = client.label_detection(image=image)
+labels = response.label_annotations
+
+print('Labels:')
+for label in labels:
+    print(label.description)
