@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "deep-tracer-321819",
+  "private_key_id": "dc7bc5036579b5062a81833a8510d65f63889c98",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDO5TZu4qg6WrC1\ne/9VUKEhk/WqONZz44oZVCOVvl2ZRBjVQPpjSqQ5xY7al7abDh2tNAwhMzLoUrlM\nWmKxvedFLOxhLP5sLQoHKQm5KPME/bOHKbqMzrPdAIo1tAn/3komTVYFP/5ucX4a\nIPA1pcBALyMW81tKKqvYxAt/47o2jYQp1uyo2u1WR1geNctMXSK/rOGe9dqy20dw\nkIorPBOpu0cQKLSpjfVWklHEnFuGz1slMlSbNw8iovoT2bCLEc9VxLnygMcIJR75\nrLSQ44+WR721gcICxoVrVgG0LoyoXDtNHCPfKCcP4c5PndBjjTfAE9/5IlI4mZcm\ntRINW7KzAgMBAAECggEAY743NtAIwFE2fdfwqcW8WL7HIbBTGv2odzuMCEYFQ72D\np1OzIqk6cSugChw4CZqNjhHYgyz2rvAqqvesOvpNg5j7wIF7itVPz1HmgSCPwGk6\n4r+oUvfX2ITJHMjWRUd6QerovJE0bTRD0f7tLz/gZlETPp5F9YSK4m7pCFfWTzOe\nd/imu5sECC2LSeGMFq/PtLvyGIdenFC8cKj9tM+R1SFUunD+wam2Ew0M/n9r+VX+\nGQc0aMhHo6+nCMaC+MkvxRAzZy0alW7WGbmfOZtBf8K/G0T8McnOED1nqe/zgrdI\nqbiLgYmP3Wslc7KbEixLDkURnVwSnyWXZR92k/xEAQKBgQDsQIgmXlc8yGchDa42\ndECttUcvxfyRrBEBWVGIflGwa8TzroKTy/nLqzSYHE801gBBMsyR8C6hiOAET5cb\nqAEoHNlWgDf45EX/JcfQjOqduIMaHpgjhZxrnJPTVGAL96WBxPo5t2hAdcW5MdaE\nqGrP2tKXrv0wQCPhisAAalzWAQKBgQDgMHzU9GDV33rjko1yqm4HzDJh9e/FkLNm\n++Nvymoq8JsZqzjpm+M6xIgX1DKWUDXvdPnIRnE7LcKlc2JWZ+OKtRuDiZ2ZsB+P\nP9i6qpbe5ejAzqIPzg1cvhA//phsM57FQZDSDK2u2Tho+InprP4UjFQbBGixH+Sn\nOK2M1RIQswKBgF6FAvO20tgypXAH9Sc8I5Rb7nsijwYI/VS403H0d+JJe6ayrvNK\nrEnb2VLyII5XAAsVs9q/aSifhmCzJxWdhbjysdF1wu8FBSwrhWHevw8S/wC4NM4h\nao9zOYFXRIYFMmZU1He69S6078JEOjsg1nsKZS7ih9GCF9joliCUbUgBAoGABRVU\nX0fDQlY05SAXkPgIUqjwo4P+Ec68IqOnfotqaNrXyXc2bSWZu2VlaJTpKLtc3bcb\nSs0+GAdrmHDLVAY7BJQisZLXPfreXFMoSONBVICGDIki55TWfLnaiHjvX9Szzukz\nrW+YKJTIUKkCB4hionikF5C8BvggKSKB3OWf6T0CgYAnyDRx1qduje+P0yNMhmrY\nqYZ0SLDjLQl2mDE9swkO8R2wMZgTev9kSsLlJp+r3KXk6TsTgGjW8DLvxB00ZVSU\nJ667A3uR7M4/tmrOwrlmaSjk92TWXRB+Y05nwR0v13lL2BROWcfKh2/X6nHjHZWs\nbKRoRey6pSTfD1MeJjnn3g==\n-----END PRIVATE KEY-----\n",
+  "client_email": "matias-arazi@deep-tracer-321819.iam.gserviceaccount.com",
+  "client_id": "104152179941458722758",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/matias-arazi%40deep-tracer-321819.iam.gserviceaccount.com"
+}
