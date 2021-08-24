@@ -1,23 +1,30 @@
 from PIL import Image
-
-def mosaic(pic, x, y, w, h):
+"""
+Pic: picture a modificar
+X,Y: punto de inicio
+W,H: width, height
+R: 
+"""
+def mosaic(pic, x, y, w, h,r):
   bw = pic.load()
   for i in range(x, x+w): 
     for j in range(y, y+h):
-        bw[i,j]=0
         a= 0,0,0
-        for n1 in range(-10,10):
-            for n2 in range(-10, 10):
+        valid = 0
+        for n1 in range(-r,r+1):
+            for n2 in range(-r,r+1):
                 try:
-                  a = (a[0]+bw[i+n1, j+n2][0],a[1]+bw[i+n1, j+n2][1],a[2]+bw[i+n1, j+n2][2])
+                  a = (a[0]+bw[i+n1, j+n2][0] ,a[1]+bw[i+n1, j+n2][1] ,a[2]+bw[i+n1, j+n2][2])
+                  valid+=1
                 except:
                     pass
-        bw[x+i,y+j]=int(a[0]/(19*19-1)),int(a[1]/(19*19-1)),int(a[2]/(19*19-1))
-  return pic #version alternativa. sirve mas.
-
+                 
+        bw[i,j]=int(a[0]/valid),int(a[1]/valid),int(a[2]/valid)
+  return pic 
+                                                            
 img = Image.open('bts.jpg')
-
-img = mosaic(img, 100, 100, 100, 100)
+r=input()
+img = mosaic(img, 100, 100, 100, 100,r)
 img.load()[100, 100] = img.load()[200, 200]=(255,0,0)
 
 img.show()
