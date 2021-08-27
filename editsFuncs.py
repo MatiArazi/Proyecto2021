@@ -19,3 +19,10 @@ def pixelate(imgFile, x, y, w, h, k):
   img_edt = cv2.resize(img_edt, (w, h), interpolation=cv2.INTER_NEAREST)
   img_src[y:y+img_edt.shape[0], x:x+img_edt.shape[1]] = img_edt
   return img_src
+
+def rectangle(imgFile, x, y, w, h, r,g,b):
+  #read image
+  img_src = cv2.imread(imgFile)
+  cv2.rectangle(img_src,(x,y),(x+w,y+h),(r,g,b),-1)
+  return img_src
+
