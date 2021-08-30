@@ -22,8 +22,8 @@ def mosaic(pic, x, y, w, h,r):
         bw[i,j]=int(a[0]/valid),int(a[1]/valid),int(a[2]/valid)
   return pic 
                                                             
-img = Image.open('bts.jpg')
-r=input()
+img = Image.open('Test Images/motorway.jpg')
+r=int(input())
 img = mosaic(img, 100, 100, 100, 100,r)
 img.load()[100, 100] = img.load()[200, 200]=(255,0,0)
 
